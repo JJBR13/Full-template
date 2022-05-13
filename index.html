@@ -11,40 +11,41 @@
 
 <body>
     <!-- Header -->
-<nav class="navbar navbar-light bg-light navbar-expand-sm">
-    <a href="/" class="navbar-brand">Whiskey Drop</a>
+    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+        <a href="/" class="navbar-brand">Whiskey Drop</a>
 
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Whiskeys
-                  </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <a class="dropdown-item" href="#">Irish</a>
-                                  <a class="dropdown-item" href="#">Scotch</a>
-                                  <a class="dropdown-item" href="#">Japanese</a>
-                                  <a class="dropdown-item" href="#">American</a>
-                              </div>
-                          </li>
-          
-            </li>
+            <ul class="navbar-nav mr-auto">
+                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Whiskeys
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Irish</a>
+                        <a class="dropdown-item" href="#">Scotch</a>
+                        <a class="dropdown-item" href="#">Japanese</a>
+                        <a class="dropdown-item" href="#">American</a>
+                    </div>
+                </li>
 
-            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In</a></li>
-        </ul>
-    </div>
-    <div class="d-none d=md-block">
-        <p class="navbar-text my-auto mr-2">Great whisky delivered to your door!</p>
-        <a href="/login">Sign In / Sign Up</a>
-    </div>
-</nav>
+                </li>
+
+                <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In</a></li>
+            </ul>
+        </div>
+        <div class="d-none d=md-block">
+            <p class="navbar-text my-auto mr-2">Great whisky delivered to your door!</p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
+    </nav>
 
     <!--Hero section-->
 
@@ -53,17 +54,17 @@
             <div class="col-12">
                 <div class="alert alert-warning">
                     <strong>Sale Now On!</strong>We've got a sale on. Get 12 months sunscrition for the price of 6</div>
-                </div><a href="/">See hear for details</a>
-                <section class="callout jumbotron text-center">
-                    <h1>The finest whiskey delovered to your doorstep</h1>
-                    <p class="lead"> Sign up to start reciving the world's best whiskeys every month.
-                        <s class="d-none d-sm-inline">£15.99</s> <strong><mark>This one is free!</mark></strong></p>
-                    <span class="d-inline d-sm-none"><br></span>
-                    <button class="btn btn-success btn-lg">Sign up</button>
-                    <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
-                            responsibly.</small></p>
-                </section>
-            </div>
+            </div><a href="/">See hear for details</a>
+            <section class="callout jumbotron text-center">
+                <h1>The finest whiskey delovered to your doorstep</h1>
+                <p class="lead"> Sign up to start reciving the world's best whiskeys every month.
+                    <s class="d-none d-sm-inline">£15.99</s> <strong><mark>This one is free!</mark></strong></p>
+                <span class="d-inline d-sm-none"><br></span>
+                <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModel">Sign up</button>
+                <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
+                        responsibly.</small></p>
+            </section>
+        </div>
         </div>
         <hr>
 
@@ -120,7 +121,8 @@
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="feature">
-                                    <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">NEW!!</span></h3>
+                                    <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span
+                                            class="badge badge-success">NEW!!</span></h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt
                                         ut
@@ -142,22 +144,28 @@
 
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="feature">
-                                    <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor
                                         incididunt
                                         ut
-                                        labore et dolore magna aliqua. Eu consequat ac felis donec et. Amet consectetur
+                                        labore et dolore magna aliqua. Eu consequat ac felis donec et. Amet
+                                        consectetur
                                         adipiscing elit
-                                        duis tristique sollicitudin nibh. Nullam non nisi est sit amet facilisis.
+                                        duis tristique sollicitudin nibh. Nullam non nisi est sit amet
+                                        facilisis.
                                         Tristique
                                         senectus et
                                         netus et malesuada fames ac turpis. Amet venenatis urna cursus eget nunc
                                         scelerisque
                                         viverra
-                                        mauris. Sagittis id consectetur purus ut faucibus. Orci sagittis eu volutpat
+                                        mauris. Sagittis id consectetur purus ut faucibus. Orci sagittis eu
+                                        volutpat
                                         odio
                                         facilisis
-                                        mauris. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Tortor
+                                        mauris. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus.
+                                        Tortor
                                         at risus
                                         viverra
                                         adipiscing at in.
@@ -168,22 +176,28 @@
 
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="feature">
-                                    <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3
+                                    </h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor
                                         incididunt
                                         ut
-                                        labore et dolore magna aliqua. Eu consequat ac felis donec et. Amet consectetur
+                                        labore et dolore magna aliqua. Eu consequat ac felis donec et. Amet
+                                        consectetur
                                         adipiscing elit
-                                        duis tristique sollicitudin nibh. Nullam non nisi est sit amet facilisis.
+                                        duis tristique sollicitudin nibh. Nullam non nisi est sit amet
+                                        facilisis.
                                         Tristique
                                         senectus et
                                         netus et malesuada fames ac turpis. Amet venenatis urna cursus eget nunc
                                         scelerisque
                                         viverra
-                                        mauris. Sagittis id consectetur purus ut faucibus. Orci sagittis eu volutpat
+                                        mauris. Sagittis id consectetur purus ut faucibus. Orci sagittis eu
+                                        volutpat
                                         odio
                                         facilisis
-                                        mauris. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Tortor
+                                        mauris. Nullam vehicula ipsum a arcu cursus vitae congue mauris rhoncus.
+                                        Tortor
                                         at risus
                                     </p>
                                     <button class="btn btn-small btn-light">Read More</button>
@@ -192,15 +206,53 @@
                         </div>
                     </section>
     </article>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
-    </body>
+
+    <!-- Modal -->
+
+    <div class="modal" tabindex="-1" id="signUpModel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up to Whisky Drop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email
+                                address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email Address">
+                            <div id="emailHelp" class="form-text">We'll never share your
+                                email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <label for="repeat-password" class="form-label">Reapeat
+                                Password</label>
+                            <input type="password" class="form-control" id="repeat-password"
+                                placeholder="Reapeat Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                </div>
+                <!-- JS Script-->
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous">
+                </script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                    crossorigin="anonymous">
+                </script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                    crossorigin="anonymous">
+                </script>
+</body>
 
 </html>
