@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&family=PT+Sans&display=swap');
 
-header{
+header {
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -8,18 +8,29 @@ body {
     font-family: 'Mukta', sans-serif;
 }
 
-.alert-container {
-
-}
+.alert-container {}
 
 .callout-container {
-    
+    height: 100vh;
+    background: url(https://github.com/Code-Institute-Solutions/BootstrappingYourNextBigIdea-BS4/blob/master/04-BeyondBootstrap/01-updating_our_callout/images/whiskey-background.jpg?raw=true) no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
-.quote-container {
+.quote-container {}
 
-}
+.feature-container {}
 
-.feature-container {
+/* jumbotron */ 
 
+.jumbotron-header{
+    color: white
+    font-weight: bold;
+    margin-bottom: 30px;
 }
